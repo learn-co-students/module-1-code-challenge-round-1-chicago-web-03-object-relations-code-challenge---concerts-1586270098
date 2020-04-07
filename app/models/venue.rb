@@ -6,10 +6,19 @@ class Venue
     def initialize(title, city)
         @title = title
         @city = city
-        @@all << self
+        @@all.push(self)
     end
 
     def self.all
         @@all
+    end
+
+    def title(title)
+        self.title = title
+        return title 
+    end
+
+    def city
+        @city
     end
 end
