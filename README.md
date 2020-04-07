@@ -44,7 +44,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Initializers, Readers, and Writers
 
-#### Band
+#### Band X
 
 - `Band#initialize(name, hometown)`
   - should initialize with a name (string) and hometown (string)
@@ -57,7 +57,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Band.all`
   - returns an array of all the instances of `Band`
 
-#### Venue
+#### Venue X
 
 - `Venue#initialize(title, city)`
   - should initialize with a title (string) and city (string)
@@ -70,7 +70,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Venue.all`
   - returns all the instances of `Venue`
 
-#### Concert
+#### Concert X
 
 - `Concert#initialize(date, band, venue)`
   - should initialize with a date (string), band, and venue
@@ -79,21 +79,21 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Object Relationship Methods
 
-#### Concert
+#### Concert X
 
 - `Concert#band`
   - should return the `Band` instance for this concert
 - `Concert#venue`
   - should return the `Venue` instance for this concert
 
-#### Venue
+#### Venue X
 
 - `Venue#concerts`
   - returns an array of all the concerts for the venue
 - `Venue#bands`
   - returns an array of all the bands for the venue
 
-#### Band
+#### Band X
 
 - `Band#concerts`
   - should return an array of all the concerts that the band has played in
@@ -108,7 +108,7 @@ Some of the methods listed are provided to you in the starter code. You should c
   - returns a string with the band's introduction for this concert
   - an introduction is in the form: `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
 
-#### Band
+#### Band X
 
 - `Band#play_in_venue(venue, date)`
   - takes a venue and date (as a string) as arguments, and creates a new concert for the band in that venue on that date

@@ -1,4 +1,6 @@
 class Band
+
+
     attr_accessor :name
     attr_reader :hometown
     @@all = []
@@ -12,4 +14,10 @@ class Band
     def self.all
         @@all
     end
+
+    def concerts
+        Concert.all.select {|c| c.band == self}
+    end
+
+
 end
