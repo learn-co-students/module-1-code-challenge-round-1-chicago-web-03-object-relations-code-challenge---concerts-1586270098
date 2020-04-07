@@ -3,9 +3,17 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
+
+zac = Band.new("Zac Brown Band", "Atlanta")
+beyonce = Band.new("Beyonce", "New York")
+
+barclays = Venue.new("Barclays Center", "New York")
+att = Venue.new("ATT", "Chicago")
+
+concert_one = Concert.new("2020-12-15", zac, barclays)
+concert_two = Concert.new("2021-03-03", beyonce, barclays)
+concert_three = Concert.new("2020-09-08", beyonce, att)
+concert_four = Concert.new("2020-09-08", zac, att)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line

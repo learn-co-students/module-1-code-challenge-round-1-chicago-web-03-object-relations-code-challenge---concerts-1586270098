@@ -12,4 +12,20 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+        Concert.all.select { |concert| concert.venue == self }
+    end
+
+    def bands
+        concerts.map { |concert| concert.band }
+    end
+
+    def concert_on(date)
+        concerts.find { |concert| concert.date == date }
+    end
+
+    def most_frequent_band
+        bands.max_by { |band| bands.count(band) }
+    end
 end
