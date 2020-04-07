@@ -1,5 +1,5 @@
 class Band
-    attr_accessor :name
+    attr_accessor :name, :concerts
     attr_reader :hometown
     @@all = []
 

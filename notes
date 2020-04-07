@@ -1,0 +1,18 @@
+Models 
+
+Band 
+
+Concert
+
+Venue 
+
+
+Band ------< Concerts
+
+Venue ----- < Concerts
+
+Band ------- < Concerts >------- Venue
+
+Since a concert belongs to a band and a venue, the join class 
+should be the concert since this class had a connect between how many 
+bands this concert sees and how many concerts it is being played at(venues)
