@@ -1,3 +1,5 @@
+require 'faker'
+require 'pry'
 class Band
     attr_accessor :name
     attr_reader :hometown
@@ -12,4 +14,15 @@ class Band
     def self.all
         @@all
     end
+
+    def concerts
+    self.Concert.all
+    end
+end
+
+
+
+
+3.times do 
+    Band.new(Faker::Music::RockBand.name, Faker::Address.city)
 end
