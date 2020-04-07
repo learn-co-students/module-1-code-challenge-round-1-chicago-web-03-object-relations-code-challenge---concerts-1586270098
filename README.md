@@ -73,18 +73,18 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Concert
 
 - `Concert#initialize(date, band, venue)`
-  - should initialize with a date (string), band, and venue
+  P should initialize with a date (string), band, and venue
 - `Concert.all`
-  - should return all instances of `Concert`
+  P should return all instances of `Concert`
 
 ### Object Relationship Methods
 
 #### Concert
 
 - `Concert#band`
-  - should return the `Band` instance for this concert
+  P should return the `Band` instance for this concert
 - `Concert#venue`
-  - should return the `Venue` instance for this concert
+  P should return the `Venue` instance for this concert
 
 #### Venue
 
