@@ -12,4 +12,25 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+        Concert.all.select{ |concert| concert.venue == self }
+    end
+
+    def bands
+        self.concerts.map { |concert| concert.bands}
+    end
+
+    def concert_on(date)
+        @@all.find{|concert| concert.date == date}
+  #- takes a date (string) as argument
+  #- finds and returns the first concert on that date at that venue
+  #- if there is no concert on that date at that venue, returns `nil`
+    end
+    
+    def most_frequent_band
+        #use helper class to get bands
+        #band.size
+    end
+
 end
