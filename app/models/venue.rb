@@ -1,5 +1,5 @@
 class Venue
-    attr_accessor :title
+    attr_accessor :title, :concerts
     attr_reader :city
     @@all = []
 
