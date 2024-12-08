@@ -1,3 +1,5 @@
+require 'pry'
+require 'faker'
 class Venue
     attr_accessor :title
     attr_reader :city
@@ -12,4 +14,19 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+      self.Concert.all
+    end
+
+    def bands
+       # .bands
+    end
+
+end
+
+
+
+3.times do 
+    Venue.new(Faker::Address.community, Faker::Address.city)
 end
